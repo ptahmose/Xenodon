@@ -2,7 +2,7 @@
 #include "core/Error.h"
 
 namespace {
-    constexpr const auto PREFERRED_FORMAT = vk::SurfaceFormatKHR{vk::Format::eB8G8R8A8Unorm, vk::ColorSpaceKHR::eSrgbNonlinear};
+    static const auto PREFERRED_FORMAT = vk::SurfaceFormatKHR{vk::Format::eB8G8R8A8Unorm, vk::ColorSpaceKHR::eSrgbNonlinear};
 
     vk::SurfaceFormatKHR find_surface_format(vk::PhysicalDevice physical, vk::SurfaceKHR surface) {
         const auto formats = physical.getSurfaceFormatsKHR(surface);

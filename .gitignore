@@ -2,3 +2,6 @@ subprojects/*
 !subprojects/*.wrap
 !subprojects/lodepng
 *.conf
+
+.vscode/
+build/
